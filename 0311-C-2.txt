@@ -1,0 +1,23 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int num; 
+    printf("숫자를 입력하세요: ");
+    scanf("%d", &num);
+    
+    if(num % 2 == 0) //if는 조건문이다. 괄호안에 조건을 넣으면 그 조건이 부합 할 시 중괄호 안에 있는 실행문을 출력한다. 중괄호는 실행문이 2개 이상일때 무조건 사용 해야한다. 현재 조건은 num의 나머지가 2랑 같을 때 이다.
+    {
+        printf("짝수\n"); 
+        printf("2로 나눈 나머지가 0\n");
+    }
+    
+    else 
+    {
+        printf("홀수\n");
+        printf("2로 나눈 나머지가 1");
+    }
+    
+
+    return 0;
+}
